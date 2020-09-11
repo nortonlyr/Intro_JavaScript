@@ -2,6 +2,11 @@ function monitorCount(rows, columns) {
     return rows * columns;
   }
   
-  const numOfMonitors = monitorCount(7, 8);
+  function costOfMonitors(rows, columns){
+    return monitorCount(rows, columns) * 100;
+  }
   
-  console.log(numOfMonitors);
+  const totalCost= costOfMonitors(7,8)
+  
+  console.log(totalCost)
+  
