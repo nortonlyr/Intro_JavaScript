@@ -11,8 +11,44 @@
 
             var result = location + "The largest" + companyType + companyName + "is world No.1, The CEO is named" + bossName
             + 'has $' + money + 'annual salary. The' + companyName + 'famous product is' + product + '. Each ' + product + 
-            'at least five' + unit + 'dollar.'
+            'at least five' + unit + 'dollar.';
+
+            document.getElementById("result").value=result;
+
+        }
+
+        function $(id){
+            var value = document.getElementById(id).value;
+            return value;
         }
 
     </script>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        span{
+            display: inline-block;
+            border: 1px solid lightgray;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+
+        botton#generate{
+            width: 80px;
+            height:30px;
+        }
+
+        textarea{
+            width:100px;
+            height:150px;
+            margin-top:20px;
+        }
+        
+    </style>
+
+
+
 </html>
